@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Layout Management</title>
+    <meta name="description" content="customize your layout">
+    <meta name="keywords" content="KEY, WORDS, HERE">
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
+          <meta charset="utf=8">
+    <style>
+var colors = ["blue", "yellow", "green", "purple", "rgb(250, 175, 72)"];
+var shapes = document.querySelectorAll(".shape");
+Array.prototype.forEach.call(shapes, function(shape){
+  shape.addEventListener("click", function(){
+    var colorNum = Math.floor(Math.random() * colors.length);
+    shape.style['background-color'] = colors[colorNum];
+  });
+});
+.shape{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: gray;
+  cursor: pointer;
+}
+<h3>Click on the shapes to change their color</h3>
+
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<div class="shape"></div>
+<svg height="100" width="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+   <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+</style>
+  </head>
+
+  <body>
+  	<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Restaurant Name</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="Restaurant.html">Restaurant Info</a></li>
+        <li><a href="entreeeee.html">Layout</a></li>
+           <li><a href="Reservations.html">Reservations</a></li>
+      </ul>
+    </div>
+  </nav>
+        
+  <h1>Table Manager</h1>
+
+ 
+
+
+ 
+</body>
+
+</html>

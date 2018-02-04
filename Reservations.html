@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Restaurant Info</title>
+    <meta name="description" content="Edit basic information">
+    <meta name="keywords" content="KEY, WORDS, HERE">
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        
+        <div id = "show-panel" class="panel">
+        <script type="text/javascript">
+
+            window.onload = function readTextFile()
+{
+  console.log("IN HERE");
+  // var divElem = document.getElementById("out1");
+  //               divElem.innerHTML = "<p> YOOOOOOOOOOO <p>";
+  //   var rawFile = new XMLHttpRequest();
+  //   rawFile.open("GET","test.txt", false);
+  //   rawFile.onreadystatechange = function ()
+  //   {
+  //       if(rawFile.readyState === 4)
+  //       {
+  //           if(rawFile.status === 200 || rawFile.status == 0)
+  //           {
+  //               var allText = rawFile.responseText;
+  //               var divElem = document.getElementById("out1");
+  //               divElem.innerHTML = "<p> YOOOOOOOOOOO <p>";
+  //           }
+  //       }
+  //   }
+  //   rawFile.send(null);
+
+        //   var input = event.target;
+
+        // var reader = new FileReader();
+        // reader.onload = function(){
+        //   var text = reader.result;
+        //   var node = document.getElementById('out');
+        //   node.innerText = text;
+        //   console.log(reader.result.substring(0, 200));
+        // };
+        // reader.readAsText(input.files[0]);
+
+
+        var txtFile = "test.txt";
+var file = new File(txtFile, null);
+
+file.open("r"); // open file with read access
+var str = "";
+while (!file.eof) {
+  // read each line of text
+  str += file.readln() + "\n";
+}
+file.close();
+alert(str);
+}
+
+            </script>
+  </head>
+  <body>
+
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Entree</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="Restaurant.html">Restaurant Info</a></li>
+        <li><a href="entreeeee.html">Layout</a></li>
+        <li><a href="Reservations.html">Reservations</a></li>
+      </ul>
+    </div>
+    <div id="out1">
+    </div>
+  </nav>
+</body>
+</html>
